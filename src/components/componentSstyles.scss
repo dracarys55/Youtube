@@ -1,0 +1,115 @@
+div.search-bar {
+  display: flex !important;
+  justify-content: center;
+  padding-right: 26rem;
+  align-items: center;
+
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+      img {
+        width: 10rem;
+        height: 8rem;
+        margin-top: -1rem;
+        margin-right: 15rem;
+      }
+    }
+
+    div.search-part {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: -1.5rem !important;
+      input {
+        width: 35rem !important;
+
+        height: 2.3rem;
+      }
+      button {
+        width: 5rem;
+        height: 2.3rem;
+        transition: all 0.5s ease !important;
+        border: rgb(206, 203, 203) 1px solid;
+        cursor: pointer;
+        i {
+          color: gray;
+          transition: all 0.5s ease;
+        }
+      }
+      button:hover {
+        button {
+          background-color: rgb(117, 116, 116);
+        }
+        i {
+          color: rgb(46, 46, 46);
+        }
+      }
+    }
+
+    button.microphone {
+      margin-top: -1.5rem !important;
+      margin-left: 1rem;
+      border: none;
+      border-radius: 50%;
+      background-color: rgb(240, 245, 240);
+      cursor: pointer;
+      i {
+        font-size: 1.5rem;
+        color: rgb(119, 118, 118);
+        transition: all 0.5s ease;
+      }
+    }
+    button.microphone:hover {
+      i {
+        color: rgb(37, 37, 37);
+      }
+    }
+  }
+}
+
+div.video-item {
+  display: flex !important;
+
+  img.snippet-img {
+    width: 12rem;
+    cursor: pointer;
+  }
+
+  div.content {
+    display: flex;
+    flex-direction: column;
+    div.header {
+      font-size: 1.1rem;
+      cursor: pointer;
+    }
+    div.channel-title {
+      margin-top: 13px;
+      margin-bottom: 2px;
+      font-size: 13px;
+      color: rgb(110, 106, 106);
+      cursor: pointer;
+    }
+
+    div.content-description {
+      font-size: 13px;
+      color: rgb(110, 106, 106);
+      cursor: pointer;
+    }
+  }
+}
+
+div.video-detail {
+  margin-left: 25px;
+  div {
+    h2 {
+      margin-top: 1rem !important;
+    }
+    p.full-detail {
+      margin-left: 20px !important;
+      color: rgb(110, 106, 106);
+      cursor: pointer;
+    }
+  }
+}

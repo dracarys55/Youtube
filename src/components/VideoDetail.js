@@ -1,4 +1,5 @@
 import React from 'react';
+import './componentSstyles.scss';
 
 const VideoDetail = ({ video }) => {
   if (!video) {
@@ -9,7 +10,7 @@ const VideoDetail = ({ video }) => {
   const videoSrc = `https://www.youtube.com/embed/${video.id.videoId}`;
 
   return (
-    <div>
+    <div className='video-detail'>
       <div className='ui embed'>
         <iframe
           allowfullscreen='true'
@@ -17,9 +18,10 @@ const VideoDetail = ({ video }) => {
           title={video.snippet.title}
         />
       </div>
-      <div className='ui segment'>
-        <h4 className='ui header'>{video.snippet.title}</h4>
-        <p>{video.snippet.description}</p>
+      <div>
+        <h2 className='ui header'>{video.snippet.title}</h2>
+        <h4>觀看次數：100,000次 • 2021年8月12日 • {video.snippet.title} </h4>
+        <p className='full-detail'>顯示完整資訊</p>
       </div>
     </div>
   );

@@ -12,7 +12,7 @@ const VideoList = ({ videos, onVideoSelect }) => {
     );
   }); //把從videos 拿到的 Array 每一個都進去 VideoItem 裡面跑
 
-  return <div className='ui relaxed divided list'>{renderedList}</div>;
+  return <div className='ui relaxed  list'>{renderedList}</div>;
 };
 
 export default VideoList;
