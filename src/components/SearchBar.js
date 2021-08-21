@@ -16,7 +16,7 @@ const SearchBar = ({ onFormSubmit }) => {
     <div className='search-bar ui  container'>
       <form className='ui form' onSubmit={onSubmit}>
         <a href='#'>
-          <img src='/youtube.svg' alt='' />
+          <img src={process.env.PUBLIC_URL + '/youtube.svg'} alt='' />
         </a>
         <div className='search-part'>
           <input
